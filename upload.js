@@ -47,7 +47,7 @@ upload.prototype.xhr = function(opts,cb){
 }
 
 upload.prototype.multipart = function(opts,cb){
-  
+  console.log('multipart!')
   if(!cb && _.isFunction(opts)){
     cb = opts
     opts = { headers : {} }
